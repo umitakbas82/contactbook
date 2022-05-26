@@ -1,0 +1,62 @@
+<div class="container mt-3">
+    <div class="row">
+        <div class="col">
+            <p class="h3 text-danger fw-bold">Contacts</p>
+            <a class="btn btn-danger btn-sm" routerlink="/contacts/add">
+                <i class="fa fa-plus-circle"></i>New Contact
+            </a>
+            <p>Dumy text</p>
+            <form>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Search" />
+                            </div>
+                            <div class="col">
+                                <input class=" btn btn-outline-dark" type="submit" value="search">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--cards-->
+<div class="container mt-3">
+    <div class="row">
+        <div class="col md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Contact 1</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row align-items-center">
+
+                        <div class="col-sm-7">
+                            <ul class="list-group">
+                                <li class="list-group-item">Name:<span class="fw-bold">Name</span></li>
+                                <li class="list-group-item">Email:<span class="fw-bold">Email</span></li>
+                                <li class="list-group-item">Phone:<span class="fw-bold">Phone</span></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-1 d-flex flex-colmun justify-content-center align-items-center">
+                            <a class="btn btn-warning my-1" routerLink="/contacts/add/contactId">
+                                <i class="fa fa-eye"></i>
+                            </a>
+                            <a class="btn btn-primary my-1" routerLink="/contacts/add/contactId">
+                                <i class="fa fa-pen"></i>
+                            </a>
+                            <a class="btn btn-danger my-1" routerLink="/contacts/add/contactId">
+                                <i class="fa fa-trash"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
