@@ -1,34 +1,65 @@
-<div class="container mt-3">
-    <div class="row">
-        <div class="col">
-        <p class="h3">Add Contacts</p>    
+<div class="card-box">
+    <form >
+        <div class="row" style="text-align: center;display: block;">
+            <h2>Kişi Ekle</h2>
         </div>
-    </div>
-</div>
 
-
-<div class="container">
-    <div class="row">
-        <div class="col-sm-4">
-            <form >
-                <div class="mb-2">
-                    <input type="text" class="form-control" placeholder="Name" type="text">                    
+        <div class="row">
+            <div class="offset-lg-3 col-lg-6">
+                <div class="form-group">
+                    <label for="txtcode">ID</label>
+                    <input type="text" id="txtcode" class="form-control" formControlName="id" autocomplete="off" />
                 </div>
-                <div class="mb-2">
-                    <input type="text" class="form-control" placeholder="Email" type="email">                    
-                </div>
-                <div class="mb-2">
-                    <input type="text" class="form-control" placeholder="Phone" type="Number">                    
-                </div>
-                <div class="mb-2">
-                    <input type="text" class="form-control" placeholder="Mobile" type="number">                    
-                </div>
-                <div class="mb-2">
-                    <input type="text" class="form-control" placeholder="Company" type="text">                    
-                </div>
-                
-            </form>
-
+            </div>
         </div>
-    </div>
+        
+        <div class="row">
+            <div class="offset-lg-3 col-lg-6">
+                <div class="form-group">
+                    <label>İsim Soyisim</label>
+                    <input type="text" class="form-control" formControlName="name" autocomplete="off" />                    
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="offset-lg-3 col-lg-6">
+                <div class="form-group">
+                    <label>Birimi</label>
+                    <input type="text" class="form-control" formControlName="birim" autocomplete="off" />                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="offset-lg-3 col-lg-6">
+                <div class="form-group">
+                    <label>Telefon</label>
+                    <input type="text" class="form-control" formControlName="telefon" autocomplete="off" />                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="offset-lg-3 col-lg-6">
+                <div class="form-group">
+                    <label>E-Mail</label>
+                    <input type="text" class="form-control" formControlName="email" autocomplete="off" />                    
+                </div>
+            </div>
+        </div>
+       
+
+        <div class="row">
+            <div class="offset-lg-3 col-lg-2">
+                <br>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">Ekle</button>
+                    <button  href="contacts/admin" type="submit" class="btn btn-danger btn-lg btn-block">Kapat</button>
+                </div>
+            </div>
+           
+        </div>
+
+    </form>
 </div>
